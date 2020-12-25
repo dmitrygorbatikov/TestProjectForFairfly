@@ -1,0 +1,74 @@
+    .container {
+      width: 1500px;
+      height: 3px;
+      background: #000;
+  margin-left: 50px;
+  display: flex;
+  margin-top: 500px;
+  transform: scale(1, -1);
+}
+
+.element {
+  border: 1px solid black;
+  background: green;
+  display: block;
+  margin: 5px;
+  width: 40px;
+  text-align: center;
+}
+.inner__p{
+  color: red;
+  transform: rotate(180deg);
+  transform: scale(1, -1)
+}
+.index{
+  color: blue;
+    transform: rotate(180deg);
+  transform: scale(1, -1);
+}
+.lineY{
+position: absolute;
+width: 3px;
+height: 503px;
+background: #000;
+top: 0px;
+left: 55px;
+
+}
+.indexY{
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 35px;
+  color: blue;
+}
+.y0{
+  top: 487px;
+}
+.y1{
+  top: 437px;
+}
+.y2{
+  top: 387px;
+}
+.y3{
+  top: 337px;
+}
+.y4{
+  top: 287px;
+}
+.y5{
+  top: 237px;
+}
+.y6{
+  top: 187px;
+}
+.y7{
+  top: 137px;
+}
+.y8{
+  top: 87px;
+}
+.y2,.y3,.y4,.y5,.y6,.y7,.y8{
+  left: 30px;
+}

@@ -1,0 +1,548 @@
+@import 'fonts.css';
+
+body{
+	min-width: 320px;
+}
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-bar{
+	padding: 15px 0;
+	background-image: url('../img/header.png');
+	background-size: cover;
+	background-position: 0 100%;
+
+}
+.menu{
+	display: flex;
+}
+.menu__item{
+	margin-left: 21px;
+}
+
+.menu__item > a{
+	font-family: 'Roboto Black';
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 17px;
+	color: #fff;
+}
+.menu__item.active > a {
+	color: #00e0d0;
+}
+.menu__item a:hover {
+	color: #00e0d0;
+	transition: 0.2s;
+}
+
+.bar__img{
+	
+	
+}
+.header{
+	padding-top: 164px;
+	text-align: center;
+}
+.header__title{
+	font-size: 40px;
+	font-family: 'Playfairdisplay Black';
+	color: #fff;
+}
+.header__title:after{
+
+	display: block;
+	content: "";
+	background: #00e0d0;
+	width: 50px;
+	height: 1px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.header__text{
+	font-size: 21px;
+	font-family: 'Roboto Light';
+	color: #fff;
+}
+.col-centered{
+	margin: 0 auto;
+}
+.button{
+	margin-top: 54px;
+	padding: 11px 14px;
+	font-size: 16pt;
+	color: #00e0d0;
+	transition: .2s;
+	background: transparent;
+	border: 2px solid #00e0d0;
+	text-transform: uppercase;
+}
+.button:hover {
+	background: #00e0d0;
+	color: #fff;
+}
+.dot{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid #bab9bc;
+	margin-left: 3px;
+	margin-top: 127px;
+	margin-bottom: 70px;
+}
+.dot.active{
+	background: #00e0d0;
+	border-style: none;
+}
+.dots{
+}
+.our-story{
+	background: #fff;
+		padding: 70px 0;
+}
+.bigLogo__div{
+	text-align: center;
+	line-height: 360px;
+}
+.content__title{
+	color: #413d4b;
+	font-family: 'Playfairdisplay Black';
+}
+.content__text{
+	color: #817f86;
+	font-family: 'Roboto Light'
+}
+.biglogo{
+	margin: 0 auto;
+
+}
+
+.watch-out-story{
+	background-image: url('../img/two.png');
+	background-size: cover;
+	background-position: 0 100%;
+	padding-top: 202px;
+	text-align: center;
+}
+.play-icon{
+	cursor: pointer;
+}
+
+.watch-header{
+	color: #fff;
+	font-family: 'Roboto Black';
+	text-transform: uppercase;
+	font-size: 16pt;
+	padding-bottom: 202px;
+	margin-top: 34px;
+}
+.expertise{
+	padding-top: 71px;
+		text-align: center;
+}
+.expertise__title{
+	font-size: 22pt;
+	font-family: 'Playfairdisplay Black';
+}
+.expertise__text{
+	font-size: 14pt;
+	font-family: 'Playfairdisplay Black';
+	color: #a1a0a4;
+}
+.expertise__text:after{
+
+	display: block;
+	content: "";
+	background: #c6c4c9;
+	width: 50px;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: 22px;
+	margin-bottom: 84px;
+}
+.expertise__product{
+	margin-top: 38px;
+	font-size: 14pt;
+	text-transform: uppercase;
+	font-family: 'Roboto Black';
+
+}
+.ex__product__text{
+	margin-top: 27px;
+	font-size: 14pt;
+	font-family: 'Roboto Light';
+
+
+}
+.firstIcon{
+	margin-bottom: 1px;
+
+}
+.secondIcon{
+	margin-bottom: 8px;
+}
+.fourthIcon{
+	margin-top: 39px;
+}
+.fivthIcon{
+	margin-top: 39px;
+}
+.sixthIcon{
+	margin-top: 43px;
+}
+.snd__table{
+	margin-bottom: 100px;
+}
+.meet-our-amazing-team{
+	background-image: url('../img/three.png');
+	background-size: cover;
+	background-position: 0 100%;
+	padding-top: 202px;
+	text-align: center;
+}
+
+.meet__title{
+	color: #fff;
+	font-size: 22pt;
+	font-family: 'Playfairdisplay Black'
+}
+.meet__text{
+	color: #fff;
+	font-size: 14pt;
+	font-family: 'Playfairdisplay Black'
+
+
+
+}
+.meet__text:after{
+
+	display: block;
+	content: "";
+	background: #655c7f;
+	width: 50px;
+	height: 1px;
+	margin: 0 auto;
+	margin-top: 22px;
+	margin-bottom: 47px;
+}
+.photo__div{
+	width: 280px;
+	height: 280px;
+	background: #fff;
+	margin: 0 auto;
+}
+.info__div{
+	width: 280px;
+	height: 100px;
+	
+	border: 1px solid #77768a;
+	margin: 0 auto;
+	margin-bottom:  20px;
+}
+.info__title{
+	color: #fff;
+	margin-top: 19px;
+	font-family: 'Roboto Black'
+}
+.info__text{
+	color: #fff;
+	font-family: 'Roboto Light';
+	color: #b2b0c0;
+
+}
+.snd__text__meet{
+	font-size: 14pt;
+	color: #fff;
+	margin-top: 70px;
+	font-family: 'Roboto Light'
+}
+.button.hiring_btn{
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+.our-works{
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+.ourworks__title{
+	font-size: 22pt;
+	font-family: 'Playfairdisplay Black'
+}
+.ourworks__text{
+		display: block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-family: 'Roboto Light'
+}
+.works{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.works__div{
+	width: 320px;
+	height: 280px;
+	background: black;
+}
+.works__div.d1{
+	background: #b6b6b6;
+}
+.works__div.d2{
+	background: #acacac;
+}
+.works__div.d3{
+	background: #a1a1a1;
+}
+.works__div.d4{
+	background: #8a8a8a;
+}
+.works__div.d5{
+	background: #b6b6b6;
+}
+.works__div.d6{
+	background: #a4a4a4;
+}
+.works__div.d7{
+	background: #a4a4a4;
+}
+.works__div.d8{
+	background: #b6b6b6;
+}
+.works__div.d9{
+	background: #8a8a8a;
+}
+.works__div.d10{
+	background: #a1a1a1;
+}
+.works__div.d11{
+	background: #acacac;
+}
+.works__div.d12{
+	background: #b6b6b6;
+}
+.load-works{
+	text-align: center;
+}
+
+.load__works__btn{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+.people-info{
+		padding: 15px 0;
+	background-image: url('../img/four.png');
+	background-size: cover;
+	background-position: 0 100%;
+	text-align: center;
+	padding-top: 70px;
+}
+.poeple__info__text{
+	color: #8b879d;
+	margin-bottom: 56px;
+	font-family: 'Playfairdisplay Black'
+}
+.name__header{
+	color: #fff;
+	margin-bottom: 13px;
+	font-family: 'Roboto Black';
+	font-size: 14pt;
+	text-transform: uppercase;
+
+}
+.name__text{
+	color: #8b879d;
+	margin-bottom: 45px;
+	font-family: 'Roboto Light';
+	font-size: 13pt;
+	text-transform: uppercase;
+
+
+
+}
+.iconn{
+	margin-bottom: 43px;
+}
+.people__images{
+	margin: 6px;
+}
+.people__image.jane3{
+	padding-bottom: 70px;
+}
+.indent{
+	margin-bottom: 70px
+}
+.clients__title{
+	font-size: 22pt;
+	font-family: 'Playfairdisplay Black';
+	text-transform: uppercase;
+	margin-top: 71px;
+	padding-bottom: 35px;
+
+}
+.height-message{
+	height: 200px;
+}
+.submit{
+	padding: 15px 33px;
+	margin-bottom: 70px;
+}
+.Mango{
+	margin-left: 80px;
+}
+.Barneys{
+	margin-top: 47px;
+}
+.Gucci{
+	margin-top: 60px;
+	margin-left: 80px;
+}
+.Calvin_klein{
+	margin-top: 49px;
+}
+.Nike{
+	margin-left: 107px;
+	margin-top: 53px;
+}
+.Converse{
+	margin-top: 54px;
+}
+.Puma{
+	margin-left: 119px;
+	margin-top: 54px;
+}
+.levis{
+	margin-top: 50px;
+	margin-bottom: 110px;
+}
+.Billabong{
+	margin-left: 115px;
+	margin-top: 29px;
+}
+.data__input{
+	height: 45px;
+}
+.footer__{
+	background-image: url('../img/footer.png');
+	background-size: cover;
+	background-position: 0 100%;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.left__text__foter{
+	font-size: 14pt;
+	color: #9b94ac;
+	margin-top: 27px;
+	 font-family: 'Roboto Light';
+
+}
+.left_links{
+	padding-bottom: 73px;
+}
+.left__links > a{
+	margin-right: 37px;
+	font-size: 14pt;
+	text-decoration: none;
+	color: #9b94ac;
+}
+.left__links a:hover{
+	text-decoration: underline;
+	color: #25c2ce;
+	transition: 0.2s;
+}
+.middle__title__footer{
+	color: #fff;
+	 font-size: 15pt;
+	 text-transform: uppercase;
+	 margin-bottom: 42px;
+	 font-family: 'Roboto Black'
+}
+.middle__text__footer > p{
+	color: #9b94ac;
+	margin-left: 15px;
+}
+.footer__phone, .footer__adress{
+	display: flex;
+}
+.middle__info__footer{
+	margin-top: 20px;
+}
+.subscribe{
+	width: 300px;
+	border: 1px solid #9b94ac;
+}
+.subscribe > p{
+	text-align: center;
+	color: #9b94ac;
+	font-size: 14pt;
+	margin: 10px auto;
+	 font-family: 'Roboto Light';
+
+
+
+}
+.subscribe:hover{
+	background: #9b94ac;
+	color: #000;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.subscribe:hover > p{
+	color: #000;
+
+}
+.footer__btn{
+	display: flex;
+}
+.paper__image{
+	width: 80px;
+	margin-left: 20px;
+	background: #9b94ac;
+}
+.paper__image > img {
+	margin: 12px 25px;
+}
+.social__networks{
+	margin-top: 10px;
+}
+.net{
+	cursor: pointer;
+}
+#barr{
+	width: 50px;
+	color: #00e0d0;
+	transition: .2s;
+	background: transparent;
+	border-style: none;
+	margin-right: 20px;
+	display: none;
+}
+.fa-bars{
+	font-size: 40px;
+}
+@media (max-width: 1199px){
+	.clients__title{
+		text-align: center;
+	}
+	.client__name{
+		text-align: center;
+	}
+	#barr{
+		display: block;
+	}
+	.menu{
+		display: block;
+	}
+	#home, #about, #expertise, #team, #works, #peopleSay, #contact{
+		display: none;
+		padding: 10px 0;
+
+	}
+	#home.active, #about.active, #expertise.active, #team.active, #works.active, #peopleSay.active, #contact.active{
+		display: block;
+	}
+
+
+}

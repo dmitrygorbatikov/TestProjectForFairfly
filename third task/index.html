@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+
+<!-- 
+
+  Нас интересует в только <div class="container"></div>, остальные все для красоты
+
+-->
+<div class="container"></div>
+
+
+
+<div class="lineY"></div>
+
+<p class="indexY y0">0</p>
+<p class="indexY y1">5</p>
+<p class="indexY y2">10</p>
+<p class="indexY y3">15</p>
+<p class="indexY y4">20</p>
+<p class="indexY y5">25</p>
+<p class="indexY y6">30</p>
+<p class="indexY y7">35</p>
+<p class="indexY y8">40</p>
+
+<script>
+//заданный массив
+let array = [5,8,2,1,15,2,3,5,9,11,10,4,3,14,1,7,10,3,2,13]
+
+window.onload = function () {
+  //Получаем div по имени класса
+  var colorArray2 = document.getElementsByClassName("container");
+  //Я решил загрузить график в виде других блоков, где каждый 
+  //столбец это отдельный блок. Сделаем это через цикл:
+  for (var i = 0; i < colorArray2.length; i++) {
+    //Создадим переменную, которая в дальнейшем будет содержать 
+    //столбцы для графика
+    var innerHtml = ""
+    //Далее через цикл, равный количеству элементов заданного массива
+    //создадим эти блоки
+    for (var j = 0; j < array.length; j++) {
+      //Т.к. в задании было указано закрасить первые 5 столбцов
+      //в зелёный, вторые 5 в жёлтый и остальные в красный, сделаем это
+      //через условие, где в style добавим свойство background, а в него нужный цвет
+      if(j >=0 && j <=5){
+      innerHtml += `
+      <div id="index${j}" class="element" 
+        style="
+        height:${array[j]*10}px;
+
+        background: green;
+
+        ">
+        <p class="inner__p" 
+        style="
+          margin-top: ${array[j]*10}px;
+        ">
+        ${array[j]}
+        </p>
+        <p class="index" style="margin-top: ${array[j]*(-10) - 60}px">${j}</p>
+        <div style="width:3px; height:5px;background:#000; margin: 0 auto; margin-top: -14px;"></div>
+      </div>`
+
+    }//Здесь желтый цвет
+          if(j >=6 && j <=10){
+      innerHtml += `
+      <div id="index${j}" class="element" 
+        style="
+        height:${array[j]*10}px;
+        background: yellow;
+        ">
+        <p class="inner__p" 
+        style="
+          margin-top: ${array[j]*10}px;
+        ">
+        ${array[j]}
+        </p>
+        <p class="index" style="margin-top: ${array[j]*(-10) - 60}px">${j}</p>
+        <div style="width:3px; height:5px;background:#000; margin: 0 auto; margin-top: -14px;"></div>
+      </div>`
+
+    }//Остальные красные
+              if(j > 10){
+      innerHtml += `
+      <div id="index${j}" class="element" 
+        style="
+        height:${array[j]*10}px;
+        background: red;
+        ">
+        <p class="inner__p" 
+        style="
+          margin-top: ${array[j]*10}px;
+        ">
+        ${array[j]}
+        </p>
+        <p class="index" style="margin-top: ${array[j]*(-10) - 60}px">${j}</p>
+        <div style="width:3px; height:5px;background:#000; margin: 0 auto; margin-top: -14px;"></div>
+      </div>`
+
+    }
+
+    }//Здесь мы заполняем cjntainer при помощи innerHTML
+    colorArray2[i].innerHTML = innerHtml
+  }
+}
+
+</script>
+</body>
+</html>

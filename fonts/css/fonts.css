@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Playfairdisplay Black';
+	src: url('../fonts/playfair-display-black.ttf');
+}
+@font-face {
+	font-family: 'Roboto Black';
+	src: url('../fonts/roboto-black.ttf');
+}
+@font-face {
+	font-family: 'Roboto Light';
+	src: url('../fonts/roboto-light.ttf');
+}
+@font-face {
+	font-family: 'Roboto Thin';
+	src: url('../fonts/roboto-thin.ttf');
+}
